@@ -15,6 +15,11 @@ namespace Testing
             userSecondName = new List<string>();
             userEmail = new List<string>();
             userPassword = new List<string>();
+
+            userName.Add("Super");
+            userSecondName.Add("Admin");
+            userEmail.Add("admin@gmail.com");
+            userPassword.Add("123321");
         }
     }
     internal class Program
@@ -22,7 +27,6 @@ namespace Testing
         #region Menu
         static string Menu()
         {
-
             Console.Write("Which option do you need?  1.Register  2.Login  3.Exit : ");
             return Console.ReadLine()!;
         }
@@ -181,7 +185,7 @@ namespace Testing
                         if (lists.userEmail[i] == email)
                         {
                             checkEmail = true;
-                            checkBox = i; 
+                            checkBox = i;
                             break;
                         }
                     }
